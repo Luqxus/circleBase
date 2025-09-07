@@ -102,7 +102,7 @@ export function FirebaseDebug() {
       <div className="space-y-4">
         <div className="flex items-center space-x-3">
           <Icon 
-            name={getStatusIcon() as any} 
+            name={getStatusIcon()} 
             size="sm" 
             className={getStatusColor()} 
           />

@@ -10,8 +10,7 @@ import {
   where, 
   orderBy, 
   limit,
-  serverTimestamp,
-  Timestamp
+  serverTimestamp
 } from 'firebase/firestore';
 import { db } from './firebase';
 import { type Creator, type FundingTransaction } from '../app/components/FunderComponents';

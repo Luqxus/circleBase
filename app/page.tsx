@@ -23,7 +23,6 @@ import { useAccount } from "wagmi";
 import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 import { 
-  CreatorProfile, 
   FundingModal, 
   CreatorDiscovery, 
   TransactionHistory, 
@@ -62,8 +61,7 @@ export default function App() {
   
   const { 
     transactions, 
-    createTransaction,
-    getSupporterTransactions
+    createTransaction
   } = useTransactions();
 
   useEffect(() => {

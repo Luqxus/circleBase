@@ -27,48 +27,7 @@ import { Icon } from "../../components/DemoComponents";
 import { LandingPage } from "../../components/LandingPage";
 import { useCreators, useTransactions } from "../../hooks/useCreators";
 
-// Sample creator data - in a real app, this would be fetched from an API
-const SAMPLE_CREATORS: Record<string, Creator> = {
-  "1": {
-    id: "1",
-    name: "Alice Johnson",
-    username: "alice_crypto",
-    walletAddress: "0x742d35Cc6634C0532925a3b8D4C9db96C4b4d8b6",
-    bio: "Web3 developer and content creator sharing the latest in blockchain technology",
-    totalFunds: 2.45,
-    supporters: 23,
-    socialLinks: {
-      twitter: "https://twitter.com/alice_crypto",
-      youtube: "https://youtube.com/@alice_crypto"
-    }
-  },
-  "2": {
-    id: "2", 
-    name: "Bob Chen",
-    username: "bob_web3",
-    walletAddress: "0x8ba1f109551bD432803012645Hac136c",
-    bio: "DeFi enthusiast and educator helping people understand decentralized finance",
-    totalFunds: 1.89,
-    supporters: 15,
-    socialLinks: {
-      twitter: "https://twitter.com/bob_web3",
-      instagram: "https://instagram.com/bob_web3"
-    }
-  },
-  "3": {
-    id: "3",
-    name: "Carol Martinez", 
-    username: "carol_nft",
-    walletAddress: "0x1234567890123456789012345678901234567890",
-    bio: "NFT artist and digital creator exploring the intersection of art and technology",
-    totalFunds: 3.12,
-    supporters: 31,
-    socialLinks: {
-      twitter: "https://twitter.com/carol_nft",
-      youtube: "https://youtube.com/@carol_nft"
-    }
-  }
-};
+// Sample creator data removed - now using Firebase
 
 export default function CreatorFundingPage() {
   const params = useParams();
@@ -168,7 +127,7 @@ export default function CreatorFundingPage() {
                 Creator Not Found
               </h1>
               <p className="text-[var(--app-foreground-muted)] mb-4">
-                The creator you're looking for doesn't exist or has been removed.
+                The creator you&apos;re looking for doesn&apos;t exist or has been removed.
               </p>
               <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mb-4">
                 <p className="text-yellow-800 text-sm">
@@ -315,7 +274,7 @@ export default function CreatorFundingPage() {
                       </p>
                       {tx.message && (
                         <p className="text-xs text-[var(--app-foreground-muted)]">
-                          "{tx.message}"
+                          &ldquo;{tx.message}&rdquo;
                         </p>
                       )}
                     </div>

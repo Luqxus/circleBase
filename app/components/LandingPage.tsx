@@ -122,7 +122,7 @@ export function LandingPage({ onConnectWallet, className = "" }: LandingPageProp
                   {/* Feature card */}
                   <div className="bg-[var(--app-card-bg)] backdrop-blur-md rounded-2xl p-8 border border-[var(--app-card-border)] shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
                     <div className="w-20 h-20 bg-gradient-to-br from-[var(--app-accent)] to-[var(--app-accent)]/80 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300">
-                      <Icon name={feature.icon as any} size="lg" className="text-white" />
+                      <Icon name={feature.icon as "heart" | "star" | "check"} size="lg" className="text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-[var(--app-foreground)] mb-4">
                       {feature.title}

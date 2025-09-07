@@ -34,7 +34,7 @@ try {
     try {
       connectFirestoreEmulator(db, 'localhost', 8080);
       console.log('🔧 Connected to Firestore emulator');
-    } catch (error) {
+    } catch {
       console.log('ℹ️ Firestore emulator not available, using production');
     }
   }

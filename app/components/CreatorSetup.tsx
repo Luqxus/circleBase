@@ -166,7 +166,7 @@ export function CreatorSetup({ onProfileCreated, className = "" }: CreatorSetupP
             </span>
           </div>
           <p className="text-xs text-[var(--app-foreground-muted)]">
-            Your wallet address will be used to receive funds: {address?.slice(0, 6)}...{address?.slice(-4)}
+            {`Your wallet address will be used to receive funds: ${address?.slice(0, 6)}...${address?.slice(-4)}`}
           </p>
         </div>
 
@@ -234,7 +234,7 @@ export function CreatorProfileManager({ creator, onUpdateProfile, className = ""
           No Creator Profile
         </h3>
         <p className="text-[var(--app-foreground-muted)] text-sm">
-          You haven't created a creator profile yet.
+          You haven&apos;t created a creator profile yet.
         </p>
       </div>
     );

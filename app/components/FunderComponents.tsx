@@ -1,6 +1,6 @@
 "use client";
 
-import { type ReactNode, useCallback, useMemo, useState, useEffect } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { useAccount } from "wagmi";
 import {
   Transaction,
@@ -34,8 +34,8 @@ export interface Creator {
   };
   totalFunds: number;
   supporters: number;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export interface FundingTransaction {
@@ -401,7 +401,7 @@ export function TransactionHistory({ transactions, className = "" }: Transaction
                   </div>
                   {tx.message && (
                     <p className="text-xs text-[var(--app-foreground-muted)] mt-1">
-                      "{tx.message}"
+                      &ldquo;{tx.message}&rdquo;
                     </p>
                   )}
                   <p className="text-xs text-[var(--app-foreground-muted)]">
