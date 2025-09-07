@@ -3,6 +3,7 @@ import "@coinbase/onchainkit/styles.css";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
+import { FarcasterSDKProvider } from "./components/FarcasterSDKProvider";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -92,7 +93,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-background">
-        <Providers>{children}</Providers>
+        <FarcasterSDKProvider>
+          <Providers>{children}</Providers>
+        </FarcasterSDKProvider>
       </body>
     </html>
   );
