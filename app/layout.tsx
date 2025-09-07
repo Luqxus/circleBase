@@ -3,7 +3,6 @@ import "@coinbase/onchainkit/styles.css";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
-import { sdk } from "@farcaster/miniapp-sdk";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -89,15 +88,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-   // Initialize Farcaster SDK
-   useEffect(() => {
-    try {
-      sdk.actions.ready();
-      console.log('Farcaster SDK ready called successfully');
-    } catch (error) {
-      console.error('Error calling Farcaster SDK ready:', error);
-    }
-  }, []);
   
   return (
     <html lang="en">
