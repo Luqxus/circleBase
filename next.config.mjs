@@ -53,7 +53,7 @@ const nextConfig = {
       },
       {
         source: '/.well-known/farcaster.json',
-        destination: 'https://api.farcaster.xyz/miniapps/hosted-manifest/01992533-0e1b-0efb-546f-93eee42e5e26',
+        destination: 'https://api.farcaster.xyz/miniapps/hosted-manifest/019925c4-e2a0-dbbe-842a-4b4386aa3aa4',
         permanent: false, // 307 temporary redirect
       },
     ];
