@@ -2,19 +2,19 @@
   "frame": {
     "name": "circle base",
     "version": "1",
-    "iconUrl": "https://circlebase-3e5kz2rqs-lucas-lebelwanes-projects.vercel.app/icon.png",
-    "homeUrl": "https://circlebase-3e5kz2rqs-lucas-lebelwanes-projects.vercel.app",
-    "imageUrl": "https://circlebase-3e5kz2rqs-lucas-lebelwanes-projects.vercel.app/image.png",
-    "splashImageUrl": "https://circlebase-3e5kz2rqs-lucas-lebelwanes-projects.vercel.app/splash.png",
+    "iconUrl": "https://circlebase-rho.vercel.app/icon.png",
+    "homeUrl": "https://circlebase-rho.vercel.app",
+    "imageUrl": "https://circlebase-rho.vercel.app/image.png",
+    "splashImageUrl": "https://circlebase-rho.vercel.app/splash.png",
     "splashBackgroundColor": "#121212",
-    "webhookUrl": "https://circlebase-3e5kz2rqs-lucas-lebelwanes-projects.vercel.app/api/webhook",
+    "webhookUrl": "https://circlebase-rho.vercel.app/api/webhook",
     "subtitle": "Support Creators",
     "description": "Create your favorite creators with base",
     "primaryCategory": "social"
   },
   "accountAssociation": {
     "header": "eyJmaWQiOjEzMjY0MjYsInR5cGUiOiJhdXRoIiwia2V5IjoiMHhBQzI4MWE4M0U5QTY0Mjc2NTQ4NDliM0JjQzk5OUY2ZDhFQ0VlNWY0In0",
-    "payload": "eyJkb21haW4iOiJjaXJjbGViYXNlLTNlNWt6MnJxcy1sdWNhcy1sZWJlbHdhbmVzLXByb2plY3RzLnZlcmNlbC5hcHAifQ==",
+    "payload": "eyJkb21haW4iOiJjaXJjbGViYXNlLXJoby52ZXJjZWwuYXBwIn0",
     "signature": "7ASV9SPOkzEiWWncMy2cpOOIyC4SDKKkKylrMI5h77ld4ggx1cfeKsVVaivBdX78NlWwUKnudjE591MDVflPtxs="
   }
 }
