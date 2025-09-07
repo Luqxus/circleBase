@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore';
+import { getFirestore, connectFirestoreEmulator, Firestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
@@ -21,7 +21,7 @@ if (!firebaseConfig.apiKey || !firebaseConfig.projectId) {
 
 // Initialize Firebase
 let app;
-let db;
+let db: Firestore;
 let auth;
 
 try {

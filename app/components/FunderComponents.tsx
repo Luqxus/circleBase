@@ -34,6 +34,8 @@ export interface Creator {
   };
   totalFunds: number;
   supporters: number;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface FundingTransaction {
