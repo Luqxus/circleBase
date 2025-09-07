@@ -1,5 +1,6 @@
 "use client";
 
+import { sdk } from "@farcaster/frame-sdk";
 import {
   useMiniKit,
   useAddFrame,
@@ -47,6 +48,13 @@ export default function App() {
 
   const addFrame = useAddFrame();
   const openUrl = useOpenUrl();
+
+  
+
+  // For example in React:
+  useEffect(() => {
+    sdk.actions.ready();
+  }, []);
 
   // Firebase hooks
   const { 
