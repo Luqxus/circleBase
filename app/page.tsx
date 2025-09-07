@@ -1,6 +1,6 @@
 "use client";
 
-import { sdk } from "@farcaster/frame-sdk";
+import { sdk } from "@farcaster/miniapp-sdk";
 import {
   useMiniKit,
   useAddFrame,
@@ -51,9 +51,14 @@ export default function App() {
 
   
 
-  // For example in React:
+  // Initialize Farcaster SDK
   useEffect(() => {
-    sdk.actions.ready();
+    try {
+      sdk.actions.ready();
+      console.log('Farcaster SDK ready called successfully');
+    } catch (error) {
+      console.error('Error calling Farcaster SDK ready:', error);
+    }
   }, []);
 
   // Firebase hooks
