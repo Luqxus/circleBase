@@ -51,15 +51,7 @@ export default function App() {
 
   
 
-  // Initialize Farcaster SDK
-  useEffect(() => {
-    try {
-      sdk.actions.ready();
-      console.log('Farcaster SDK ready called successfully');
-    } catch (error) {
-      console.error('Error calling Farcaster SDK ready:', error);
-    }
-  }, []);
+ 
 
   // Firebase hooks
   const { 
