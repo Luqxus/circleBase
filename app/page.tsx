@@ -1,6 +1,5 @@
 "use client";
 
-import { sdk } from "@farcaster/miniapp-sdk";
 import {
   useMiniKit,
   useAddFrame,
